@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>operator</title>
 </head>
+
 <body>
     <h1>php operator</h1>
     <?php
@@ -26,8 +28,8 @@
     echo "Assignment (-=): " . $c . "<br>"; // 25
     $c *= 2; // Equivalent to $c = $c * 2
     echo "Assignment (*=): " . $c . "<br>"; // 50
-   
- $c /= 5; // Equivalent to $c = $c / 5
+
+    $c /= 5; // Equivalent to $c = $c / 5
     echo "Assignment (/=): " . $c . "<br>"; // 10
     $c %= 3; // Equivalent to $c = $c % 3
     echo "Assignment (%=): " . $c . "<br>"; // 1
@@ -65,12 +67,14 @@
     echo "Bitwise NOT: " . (~$i) . "<br>"; // 010 in binary, which is 2 in decimal
     echo "Bitwise Left Shift: " . ($i << 2) . "<br>"; // 0100 in binary, which is 4 in decimal
     echo "Bitwise Right Shift: " . ($i >> 1) . "<br>"; // 001 in binary, which is 1 in decimal
-    echo "<br>"; echo "Bitwise AND: ". ($i & $j) .  "<br>"; // 1
-    echo "Bitwise OR: ". ($i | $j) .  "<br>"; // 7
-    echo "Bitwise XOR: ". ($i ^ $j) .  "<br>"; // 6
-    echo "Bitwise NOT: ". (~$i) .  "<br>"; // -6
-    echo "Bitwise Left Shift: ". ($i << 1) .  "<br>"; // 10
-    echo "Bitwise Right Shift: ". ($i >> 1) .  "<br>"; // 2
+    echo "<br>";
+    echo "Bitwise AND: " . ($i & $j) .  "<br>"; // 1
+    echo "Bitwise OR: " . ($i | $j) .  "<br>"; // 7
+    echo "Bitwise XOR: " . ($i ^ $j) .  "<br>"; // 6
+    echo "Bitwise NOT: " . (~$i) .  "<br>"; // -6
+    echo "Bitwise Left Shift: " . ($i << 1) .  "<br>"; // 10
+    echo "Bitwise Right Shift: " . ($i >> 1) .  "<br>"; // 2
     ?>
 </body>
+
 </html>
