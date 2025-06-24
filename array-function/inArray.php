@@ -1,12 +1,6 @@
-
 <?php
-
-$state = array("Washington","Vatican City","Dhaka","DC");
 	
-	$state = array_flip($state);
-	
-		print_r($state);
-
-//it can exchange the key & value
-
+	$a = array("Mac", "NT", "Irix", "Linux");
+		$b=in_array("NT",$a);
+		echo $b;
 ?>
