@@ -1,27 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number Checker</title>
+</head>
+<body>
 <form action="" method="post">
-    <input type="number" name="num">
-    <input type="submit">
+    <input type="text" name="num" placeholder="Enter a number">
+    <input type="submit" name="submit" value="Check Prime">
 </form>
+
 <?php
-if (isset($_POST['num'])) {
-    $num = $_POST['num'];
-    $count = 0;
-    for ($i = 1; $i <= $num; $i++) {
-        if ($num % $i == 0) {
-            $count++;
+if (isset($_POST['submit'])) {
+    $num = (int)$_POST['num'];
+    if ($num < 2) {
+        echo "Not a prime number: $num";
+    } else {
+        $isPrime = true;
+        for ($i = 2; $i <= sqrt($num); $i++) {
+            if ($num % $i == 0) {
+                $isPrime = false;
+                break;
+            }
+        }
+        if ($isPrime) {
+            echo "Prime number: $num";
+        } else {
+            echo "Not a prime number: $num";
         }
     }
-    if ($count == 2) {
-        echo "prime number";
-    } else {
-        echo "not prime number";
-    }
 }
-?> 
-
-//The isset() function checks whether a variable is set, and returns TRUE if the variable is set, and FALSE if not.
-
-//The $_POST superglobal variable contains the data sent through the HTTP POST method.
-
-
-
+?>
+</body>
+</html>
