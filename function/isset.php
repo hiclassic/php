@@ -113,3 +113,18 @@ var_dump($var);
 echo "<br>";
 echo "<br>";
 ?>
+
+
+<?php 
+$num = null;
+$num = 10;
+if (!isset($num)) {
+   
+    $nu = $num + 10;
+    
+} else {
+    echo $nu;
+}
+
+?>
+
